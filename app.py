@@ -19,7 +19,7 @@ if st.button("Predecir"):
     }
     print("Seabrio la interface")
     # Realizamos la solicitud al endpoint de FastAPI
-    response = requests.post("https://predicci-n-de-modalidad-de-robo-de-d7l3.onrender.com", json=datos_entrada)
+    response = requests.post("https://predicci-n-de-modalidad-de-robo-de-d7l3.onrender.com/docs", json=datos_entrada)
     
     # Verificamos la respuesta
     if response.status_code == 200:
