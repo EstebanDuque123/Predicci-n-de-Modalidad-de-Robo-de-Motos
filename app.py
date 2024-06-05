@@ -19,7 +19,7 @@ if st.button("Predecir"):
     }
     print("Seabrio la interface")
     # Realizamos la solicitud al endpoint de FastAPI
-    response = requests.post("http://127.0.0.1:8001/predecir_modalidad_robo1/", json=datos_entrada)
+    response = requests.post("https://predicci-n-de-modalidad-de-robo-de-motos1-ihy6tmqnzbwjetvfqcqs.streamlit.app/", json=datos_entrada)
     
     # Verificamos la respuesta
     if response.status_code == 200:
